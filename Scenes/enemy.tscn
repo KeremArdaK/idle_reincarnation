@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d33u326wf2bdk" path="res://Scripts/Components/enemy.gd" id="1_afpow"]
 [ext_resource type="Texture2D" uid="uid://bm4hy4hi7ax08" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc/Orc-Death.png" id="2_287tu"]
 [ext_resource type="Texture2D" uid="uid://dlrg7irktjguk" path="res://Assets/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc/Orc-Idle.png" id="3_0830c"]
+[ext_resource type="Script" uid="uid://d26k3veei8vr0" path="res://Scripts/Components/enemy_system.gd" id="4_287tu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ghaa6"]
 atlas = ExtResource("2_287tu")
@@ -101,7 +102,10 @@ scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_hgeoe")
 animation = &"dead"
 autoplay = "idle"
-frame_progress = 0.33861905
+frame_progress = 0.7341552
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1804553303]
 shape = SubResource("CapsuleShape2D_tk7xo")
+
+[node name="EnemySystem" type="Node2D" parent="." unique_id=2027284951]
+script = ExtResource("4_287tu")
