@@ -1,7 +1,7 @@
 class_name AbilityData
 extends Resource
 
-enum Rarity { COMMON, UNCOMMON, RARE, EPIC, LEGENDARY, }
+enum Rarity { COMMON, UNCOMMON, RARE, EPIC, LEGENDARY, MYTHIC}
 
 @export var id: String
 @export var display_name: String

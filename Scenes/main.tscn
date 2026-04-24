@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://c1gmsb66jdyby"]
+
+[ext_resource type="Script" uid="uid://d26k3veei8vr0" path="res://Scripts/Components/enemy_system.gd" id="1_jjgbg"]
+[ext_resource type="Texture2D" uid="uid://nedprlk06gw4" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_1.png" id="2_21xkr"]
+[ext_resource type="PackedScene" uid="uid://cnlw12tf1ab5b" path="res://Scenes/player.tscn" id="2_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://nyfqqy7blfid" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_3.png" id="3_6bp64"]
+[ext_resource type="Texture2D" uid="uid://d313nxka5u4h4" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_4.png" id="4_344ge"]
+[ext_resource type="Texture2D" uid="uid://ck2oitk8ehvpj" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_5.png" id="5_ynf5e"]
+
+[node name="Main" type="Node2D" unique_id=1817910598]
+
+[node name="EnemySystem" type="Node2D" parent="." unique_id=1908495086]
+script = ExtResource("1_jjgbg")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=2023811128]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=423882729]
+texture_filter = 1
+position = Vector2(2, -2)
+scale = Vector2(3.1331525, 3.125)
+texture = ExtResource("2_21xkr")
+centered = false
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1162724028]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=1901246615]
+texture_filter = 1
+position = Vector2(2, -2)
+scale = Vector2(2.7716348, 3.125)
+texture = ExtResource("3_6bp64")
+centered = false
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=359361621]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=2073336272]
+texture_filter = 1
+position = Vector2(2, -2)
+scale = Vector2(2.5714285, 3.125)
+texture = ExtResource("4_344ge")
+centered = false
+
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=336636867]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=841256982]
+texture_filter = 1
+position = Vector2(-4, 2.999977)
+scale = Vector2(3.1494567, 3.125)
+texture = ExtResource("5_ynf5e")
+centered = false
+
+[node name="Player" parent="." unique_id=173403613 instance=ExtResource("2_bo1nx")]
+position = Vector2(78, 576)
